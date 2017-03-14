@@ -1,0 +1,16 @@
+
+{% extends "foundation_base.html" %}
+
+{% block body_content %}
+<div class="row">
+  <div class="large-9 columns">
+    <h1>Flask-GraphQL demo</h1>
+    <p>Click the links below:</p>
+    <ul>
+      {% for key, value in links.items() %}
+      <li><a href="{{ value }}">{{ key }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}
